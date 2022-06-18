@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+
+<!-- JavaScript Bundle with Popper -->
+
+   <link rel="stylesheet" href="/public/css/dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leftWing">
+            <div class="profilePictureDiv">
+                <div class="profilePicture">
+                    <img src="/public/images/profilePicture.jpeg" class="profilePictureImage" alt="profile_picture">
+                </div>
+                <div class="profileDetails">
+                    <p class="userName">Rotondwa Netshivhumbe</p>
+                    <div class="infoInside">
+                        <ion-icon name="location" class="LocationIcon"></ion-icon>
+                        <p class="location">THOYAS</p>
+                    </div>
+                 
+
+                </div>
+            
+                <div class="editProfile">
+                    <button class="editProfileButton"  data-bs-toggle="modal" data-bs-target="#exampleModal">Edit Profile </button>
+                </div>
+            </div>
+
+
+            <div class="menuCategory">
+                <div class="buttonDiv">
+                    <button class="searchButton">Search Hospitals <ion-icon name="search-sharp" class="searchIcon"></ion-icon></button>
+                    <button class="appointmentButton">Appointments <ion-icon name="calendar-outline" class="appointIcon"></ion-icon></button>
+                    <button class="reportButton">Report of test <ion-icon name="albums-outline" class="reportIcon"></ion-icon></button>
+                </div>
+        
+            </div>
+            <div class="menuCategorySecond">
+                <p class="covidStatus">Covid Status</p>
+              
+            </div>
+            <div class="logoutDiv">
+                <button class="logoutButton" onclick="logout()">Logout</button>
+            </div>
+           
+        </div>
+        <div class="middleWing">
+            
+            <div class="searchDiv">
+                <div class="searchContainer">
+               
+                    <input type="text" autocomplete="none" class="searchInput" name="search" placeholder=" ">
+                    <label>Search</label>
+                    <button class="search">Search</button>
+            
+                </div>
+          
+                <div class="gridContainer">
+                
+                    <div class="item1">Details about hospitals</div>
+                    <div class="item2">   <img src="/public/images/covid.png" class="loginImage"></div>
+                    <div class="item3"><img src="/public/images/vaccines.png" class="loginImageVaccine"></div>
+                    <div class="item4">Date taken</div>
+                    <div class="item5">Highest of the all</div>
+                   
+                </div>
+    
+           
+    
+            </div>
+
+
+            <div class="appointmentDiv">
+                this is appointment Div
+            </div>
+            <div class="reportDiv">
+                This is a report div
+            </div>
+        </div>
+    </div>
+
+   
+
+<script src="/public/javascript/dashboard.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

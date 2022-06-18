@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ *,::before,::after{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik',sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height:auto; 
+    width: 100% !important;
+    justify-content: center;
+}
+.leftWing{
+    display: flex;
+    width: 20% !important;
+    background-color: white;
+    height: 950px;
+    flex-direction: column;
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.068);
+    overflow-y: scroll;
+   
+    
+    
+}
+.profilePictureDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.profilePicture{
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.212);
+
+}
+.searchIcon, .appointIcon , .reportIcon{
+    font-size: 25px;
+}
+.profilePictureImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 10px solid rgba(128, 128, 128, 0.116);
+}
+.editProfileButton{
+    height: 35px;
+    width: 100px;
+    color: rgb(128, 128, 128);
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    outline: 2px solid rgba(128, 128, 128, 0.322);
+}
+.editProfileButton:hover{
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.164);
+
+}
+.menuCategory{
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.089);
+    border-radius: 10px;
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.24);
+
+}
+.menuCategorySecond{
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color:grey;
+    border-radius: 10px;
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.596);
+
+}
+.buttonDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+  
+
+
+}
+.searchButton, .appointmentButton, .reportButton{
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    background-color: #141d26;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+
+}
+.covidStatus{
+    color: white;
+    text-align: center;
+}
+.searchButton{
+    background-color: green;
+}
+.searchButton:hover , .appointmentButton:hover , .reportButton:hover{
+    transform: scale(1.02);
+}
+.searchDiv{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.searchInput{
+    height: 40px;
+    width: 600px;
+    color:black;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+    outline: none;
+    padding: 10px;
+    background: none;
+    background-color: rgba(128, 128, 128, 0.151);
+
+}
+label{
+    position: relative;
+    top: 3px;
+    right: 595px;
+    font-size: 13px;
+    transition: .3s;
+    color: rgba(128, 128, 128, 0.671);
+}
+.logoutDiv{
+  
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.logoutButton{
+    height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #b00020;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+.searchInput:focus + label {
+top: -30px;
+z-index: 10;
+color:green ;
+
+font-size: 12px;
+font-weight: 600;
+
+}
+.searchInput:focus{
+    border-bottom:2px solid green;
+}
+.searchInput:not(:placeholder-shown).searchInput:not(:focus) + label{
+    top: -30px;
+z-index: 10;
+}
+
+.search{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+}
+
+
+.searchContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+  
+}
+.appointmentDiv{
+    display: none;
+}
+.reportDiv{
+    display: none;
+}
+.middleWing{
+ width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.item1{
+   grid-area: details;
+}
+.item2{
+    grid-area: main;
+}
+.item3{
+    grid-area: righty;
+}
+.item4{
+    grid-area: footer;
+}
+.item5{
+    grid-area: item3;
+}
+.gridContainer{
+   display: grid;
+   grid-template-areas: 'details details details details details details'
+   'main main item3 item3 righty righty'
+   'footer footer footer footer footer footer';
+   gap: 10px;
+  width: 90% !important;
+   padding: 10px;
+   margin: 0 auto;
+
+}
+.gridContainer >div{
+background-color: rgba(128, 128, 128, 0.13);
+text-align: center;
+height: 250px;
+font-size: 30px;
+border-radius: 10px;
+}
+.loginImage{
+    height: 150px;
+    width: 250px;
+    position: relative;
+    top: 50px;
+    
+}
+.loginImageVaccine{
+    height: 160px;
+    width: 160px;
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.459);
+    position: relative;
+    top: 50px;
+    border-radius: 50%;
+}
+.LocationIcon{
+    color: red;
+    font-size: 20px;
+    
+}
+.profileDetails{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoInside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+position: relative;
+bottom: 10px;
+}
+.vaccinated, .covidStatusLog{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ flex-direction: row;
+ gap: 5px;
+}
+.covidStatusText, .vaccineStatus{
+    color: black;
+}
+.status{
+    position: relative;
+right: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <div class="formContainer">
+        <h1 class="signIn">Registration</h1>
+        <form class="formRegister" id="form">
+          
+            <div class="inputDiv">
+                <input type="text" class="inputBox" placeholder=" " name="id" autocomplete="off" required>
+                <label>Identity number</label>
+
+            </div>
+            <div class="inputDiv">
+               <input type="text" class="inputBox" placeholder=" "  autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" name="firstName" required>
+               <label>First Name</label>
+           </div>
+           <div class="inputDiv">
+            <input type="text" class="inputBox" placeholder=" "  autocomplete="off" readonly onfocus="this.removeAttribute('readonly');"   name="lastName" required>
+            <label>Last Name</label>
+        </div>
+           <div class="inputDiv">
+            <input type="email" class="inputBox" placeholder=" "  autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" name="email"  required>
+            <label>Email</label>
+        </div>
+        <div class="inputDiv">
+            <input type="text" class="inputBox" placeholder=" "  autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" name="phone" required>
+            <label>Phone Number</label>
+        </div>
+        <div class="inputDiv">
+            <input type="text" class="inputBox" placeholder=" "  autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" name="address" required>
+            <label>Address</label>
+        </div>
+        <div class="inputDiv">
+            <input type="password" class="inputBox" placeholder=" "  autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" name="password" required>
+            <label>Password</label>
+        </div>
+    
+           <div class="signOrRegister">
+               <input type="submit"  value="Register" id="registerButton" class="registerButton">
+              
+              
+           </div>
+          
+         
+        </form>
+        <p>Already have an account? <a href="index.html">Sign in</a></p>
+        <div class="alert alert-success" role="alert">
+            <div class="links">
+                <p class="link">You have succesfully Registered! <a href="index.html" class="login">Sign in Here</a></p>
+            </div>
+          
+          </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/public/javascript/api.js"></script>
+    <script src="/public/javascript/script.js"></script>
+</body>
+</html>
